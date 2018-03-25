@@ -1,0 +1,13 @@
+warning('off', 'all');
+rf = 0.07;
+[ind, nonind] = InterpretData('nsedata1.xlsx', rf);
+fprintf('NSE Indexed Betas - \n\n');
+disp(ind);
+fprintf('NSE Non-Indexed Betas - \n\n');
+disp(nonind);
+[ind, nonind] = InterpretData('bsedata1.xlsx', rf);
+fprintf('BSE Indexed Betas - \n\n');
+disp(ind);
+fprintf('BSE Non-Indexed Betas - \n\n');
+disp(nonind);
+warning('on', 'all');
